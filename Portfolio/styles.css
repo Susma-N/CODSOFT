@@ -1,0 +1,183 @@
+body {
+    background-color: white;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-style:italic;
+    font-weight:bold;
+    text-decoration-style:underline;
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-family: cursive;
+    background: url('C:\\Users\\susma\\Downloads\\wZ6MkP.jpg') no-repeat center;
+    background-size: cover;
+    height: 40vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sections ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .sections li {
+    margin-right: 20px;
+  }
+  
+  .sections a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .sections a:hover {
+    color: white;
+  }
+  #about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .about-content {
+    font-family: normal;
+    flex: 1;
+    padding-right: 20px;
+    line-height: 1.5;
+  }
+  
+  #about img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #about .about-content {
+    transform: translateX(-100px);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #about img {
+    transform: translateX(100px); 
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #about:hover .about-content {
+    transform: translateX(0); 
+  }
+  
+  #about:hover img {
+    transform: translateX(0);
+  }
+#achievements ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  #achievements li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #achievements img {
+    width:  120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  #achievements li div {
+    text-align: center; 
+  }
+  .progress-bar {
+    width: 450px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    padding: 0.1px;
+  }
+
+#projects {
+    padding: 20px;
+}
+
+.project {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+  
+  .content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .images {
+    flex: 1;
+    text-align: right;
+  }
+  .images img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin: 10px;
+ }
+#resume {
+    padding: 20px;
+}
+
+#contact {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    color: #666;
+}
